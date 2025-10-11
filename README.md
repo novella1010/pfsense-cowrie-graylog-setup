@@ -62,6 +62,11 @@ Basic understanding of VLANs, Syslog, and firewall rules
 
 📁 Repository Contents
 
+pfsense-syslog-config.md → Setup for log forwarding to Graylog
+
+cowrie-installation.md → Raspberry Pi deployment guide for Cowrie
+
+graylog-setup.md → Docker Compose configuration and dashboards
 
 ⚠️ Disclaimer
 
