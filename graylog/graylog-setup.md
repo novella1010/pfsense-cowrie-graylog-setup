@@ -1,9 +1,3 @@
-
----
-
-## 🧠 **`graylog-setup.md`**
-
-```markdown
 # 🧩 Graylog Configuration & Container Setup
 
 This section documents the **Graylog** setup for centralized log management and visualization.  
