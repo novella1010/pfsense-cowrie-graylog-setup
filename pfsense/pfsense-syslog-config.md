@@ -17,7 +17,7 @@ This section explains how pfSense (running bare metal) was configured to safely 
 
 Below is a screenshot of the **pfSense firewall ruleset** for the honeypot VLAN:
 
-![pfSense Honeypot Ruleset](pfSense Honeypot Rulesets.png)
+![pfSense Honeypot Ruleset]([pfSense Honeypot Rulesets.png](https://github.com/novella1010/pfsense-cowrie-graylog-setup/blob/main/pfSense%20Honeypot%20Rulesets.png))
 
 ### Explanation:
 - The **HONEYPOT subnet** is restricted to **internet-only** traffic
