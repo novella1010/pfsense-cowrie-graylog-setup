@@ -1,0 +1,53 @@
+
+---
+
+## 🔥 **`pfsense-syslog-config.md`**
+
+```markdown
+# 🔥 pfSense Syslog & Network Segmentation Configuration
+
+This section explains how pfSense (running bare metal) was configured to safely isolate the **Cowrie Honeypot** and forward logs to **Graylog**.
+
+---
+
+## ⚙️ 1. Network Architecture
+
+- **pfSense (bare metal):** Core router/firewall
+- **Raspberry Pi:** Cowrie honeypot in VLAN `10.0.50.0/24`
+- **Graylog Container:** Running on another VLAN `10.0.10.0/24`
+- **Segmentation:** Ensures Cowrie cannot reach internal networks except Graylog via controlled rules
+
+---
+
+## 🔒 2. VLAN Rules & Port Forwarding
+
+Below is a screenshot of the **pfSense firewall ruleset** for the honeypot VLAN:
+
+![pfSense Honeypot Ruleset](../images/670a4130-5ee1-4417-ad5f-a17c032e305d.png)
+
+### Explanation:
+- The **HONEYPOT subnet** is restricted to **internet-only** traffic
+- A **log-forwarding rule** allows traffic from the honeypot VLAN to Graylog (port `12201`)
+- The **SSH honeypot port (2222)** is **NAT-forwarded** to Cowrie’s internal port **22**
+  - This makes it appear as a standard SSH service to external attackers  
+  - Example pfSense Port Forward:
+    ```
+    WAN TCP 2222 → 10.0.50.X:22
+    ```
+---
+
+## 🧩 3. Syslog Forwarding
+
+pfSense also forwards its own logs to **Graylog** via UDP/TCP Syslog input, allowing centralized monitoring of both:
+- Firewall events (block/allow)
+- Honeypot connection logs
+- Network-based anomalies
+
+---
+
+## ✅ 4. Summary
+
+- Bare-metal pfSense manages VLAN segmentation  
+- Honeypot VLAN safely isolated from internal assets  
+- Graylog receives both firewall and honeypot logs  
+- SSH port-forwarding allows external simulation and testing
