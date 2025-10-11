@@ -1,10 +1,4 @@
-
----
-
-## 🔥 **`pfsense-syslog-config.md`**
-
-```markdown
-# 🔥 pfSense Syslog & Network Segmentation Configuration
+#  pfSense Syslog & Network Segmentation Configuration
 
 This section explains how pfSense (running bare metal) was configured to safely isolate the **Cowrie Honeypot** and forward logs to **Graylog**.
 
