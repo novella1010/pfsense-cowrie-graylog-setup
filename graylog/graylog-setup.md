@@ -7,8 +7,8 @@ Graylog aggregates logs from pfSense and Cowrie over **Syslog** and **GELF HTTP*
 
 ## ⚙️ 1. Reference Documentation
 
-- 🔗 [Cowrie GELF HTTP Output Setup](https://cowrie.readthedocs.io/en/latest/output_gelf.html)
-- 🔗 [Graylog Official Documentation](https://docs.graylog.org/en/latest/)
+- 🔗 [Cowrie GELF HTTP Output Setup](https://docs.cowrie.org/en/latest/graylog/README.html)
+- 🔗 [Graylog Official Documentation](https://go2docs.graylog.org/current/downloading_and_installing_graylog/docker_installation.htm?tocpath=Install%20Graylog%7CContainerized%20Deployment%7C_____1)
 
 ---
 
