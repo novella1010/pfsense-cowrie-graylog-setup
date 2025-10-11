@@ -17,7 +17,8 @@ This section explains how pfSense (running bare metal) was configured to safely 
 
 Below is a screenshot of the **pfSense firewall ruleset** for the honeypot VLAN:
 
-![pfSense Honeypot Ruleset](../images/670a4130-5ee1-4417-ad5f-a17c032e305d.png)
+![pfSense Honeypot Ruleset](<img width="1204" height="453" alt="image" src="https://github.com/user-attachments/assets/3e9596b4-e635-4c8a-aa4f-cc2880653439" />
+)
 
 ### Explanation:
 - The **HONEYPOT subnet** is restricted to **internet-only** traffic
