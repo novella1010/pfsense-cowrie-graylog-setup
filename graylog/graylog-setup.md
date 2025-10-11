@@ -10,7 +10,7 @@ Graylog aggregates logs from pfSense and Cowrie over **Syslog** and **GELF HTTP*
 - 🔗 [Cowrie GELF HTTP Output Setup](https://docs.cowrie.org/en/latest/graylog/README.html)
 - 🔗 [Graylog Official Documentation](https://go2docs.graylog.org/current/downloading_and_installing_graylog/docker_installation.htm?tocpath=Install%20Graylog%7CContainerized%20Deployment%7C_____1)
 - 🔗 [Graylog Log Screenshot](https://github.com/novella1010/pfsense-cowrie-graylog-setup/blob/main/graylog%20cowrie%20logs.png)
-
+- 🔗 [Graylog Log Output](https://github.com/novella1010/pfsense-cowrie-graylog-setup/blob/main/graylog%20cowrie%20logs.png)
 ---
 
 ## 🐳 2. Docker Compose Setup
