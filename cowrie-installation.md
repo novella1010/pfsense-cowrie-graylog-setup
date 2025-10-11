@@ -55,6 +55,3 @@ Example from your `cowrie.cfg`:
 [output_gelf]
 enabled = true
 gelf_url = http://graylog-containerIP:12201/gelf
-
-<img width="950" height="446" alt="image" src="https://github.com/user-attachments/assets/1dd2226d-0f33-422d-81e8-7703aed1ca35" />
-
