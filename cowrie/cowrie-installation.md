@@ -9,7 +9,8 @@ The goal is to safely attract and log unauthorized login attempts, command execu
 
 Follow the official Cowrie installation steps from the 7-step guide:  
 🔗 [Cowrie Installation Documentation](https://cowrie.readthedocs.io/en/latest/INSTALL.html)
-🔗 [Cowrie SSH Logs](https://github.com/novella1010/pfsense-cowrie-graylog-setup/blob/main/graylog%20cowrie%20logs.png)
+
+🔗 [Cowrie SSH Logs](https://github.com/novella1010/pfsense-cowrie-graylog-setup/blob/main/cowrie%20ssh.png)
 
 ---
 
