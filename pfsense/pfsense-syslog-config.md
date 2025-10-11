@@ -7,8 +7,8 @@ This section explains how pfSense (running bare metal) was configured to safely 
 ## ⚙️ 1. Network Architecture
 
 - **pfSense (bare metal):** Core router/firewall
-- **Raspberry Pi:** Cowrie honeypot in VLAN `10.0.50.0/24`
-- **Graylog Container:** Running on another VLAN `10.0.10.0/24`
+- **Raspberry Pi:** Cowrie honeypot in VLAN `HONEYPOT-VLAN`
+- **Graylog Container:** Running on another VLAN `CONTAINER-VLAN`
 - **Segmentation:** Ensures Cowrie cannot reach internal networks except Graylog via controlled rules
 
 ---
@@ -26,7 +26,7 @@ Below is a screenshot of the **pfSense firewall ruleset** for the honeypot VLAN:
   - This makes it appear as a standard SSH service to external attackers  
   - Example pfSense Port Forward:
     ```
-    WAN TCP 2222 → 10.0.50.X:22
+    WAN TCP 22 → HONEYPOT-IP:2222
     ```
 ---
 
