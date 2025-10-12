@@ -72,5 +72,3 @@ graylog-setup.md → Docker Compose configuration and dashboards
 
 This repository is for educational and research purposes only.
 Do not expose your honeypot directly to the public internet without isolation and monitoring. The author assumes no liability for misuse or damage caused by the implementation of this lab.
-
-Would you like me to add an ASCII-style network diagram or a Markdown diagram section to visually represent the pfSense–Cowrie–Graylog flow? That would make your README stand out to recruiters and other GitHub viewers.
